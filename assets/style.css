@@ -43,6 +43,15 @@ table {
 	border-spacing: 0;
 }
 
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 
 body {
     background: #4E5BEE;
@@ -65,8 +74,9 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
-    gap: 30px;
+    width: 280px;
+    gap: 25px;
+    margin-top: 90px;
 }
 
 input {
@@ -74,9 +84,9 @@ input {
     border-radius: 30px;
     border-color: white;
     background-color: transparent;
+    width: 100%;
     height: 45px;
-    width: 280px;
-    padding-left: 35px;
+    padding-left: 40px;
     font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, 0.733);
     font-size: 18px;
@@ -85,12 +95,8 @@ input {
 
 input:focus{
     outline:none;
-
 }
 
-.button {
-    background-color: #ffffff;
-}
 
 .lb-eml {
     position: relative;
@@ -101,7 +107,7 @@ input:focus{
     content: "";
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 7px;
     bottom: 0;
     width: 20px;
     background: url(./alternate_email_white_24dp.svg) center / contain no-repeat;
@@ -117,22 +123,23 @@ input:focus{
     content: "";
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 7px;
     bottom: 0;
     width: 20px;
     background: url(./lock_white_24dp.svg) center / contain no-repeat;
 }
 
 button {
+    width: 100%;
     height: 45px;
-    width: 325px;
     border-radius: 70px;
     background-color: white;
     border: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.719);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.644);
     font-weight: 700;
+    background-color: #ffffff;
 }
 
 .footer {
@@ -150,7 +157,7 @@ h4 {
     font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, 0.733);
     font-size: 12px;
-    padding-left: 50px;
+    padding-left: 25px;
 }
 
 .desk-img {
