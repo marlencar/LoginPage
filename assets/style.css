@@ -1,185 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-*, 
+*,
 *:after,
 *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-
 body {
-    background: #4E5BEE;
-    font-family: 'Roboto', sans-serif;
+  background: #4e5bee;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
-    align-items: center;
-    padding-top: 150px;
-    width: 45%;
-
+  align-items: center;
+  padding-top: 150px;
+  width: 45%;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    gap: 25px;
-    margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 25px;
+  margin-top: 90px;
 }
 
 input {
-    border-style: solid;
-    border-radius: 30px;
-    border-color: white;
-    background-color: transparent;
-    width: 100%;
-    height: 45px;
-    padding-left: 40px;
-    font-family: 'Roboto', sans-serif;
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 18px;
-    font-weight: 400;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 18px;
+  font-weight: 400;
 }
 
-input:focus{
-    outline:none;
+input:focus {
+  outline: none;
 }
-
 
 .lb-eml {
-    position: relative;
-    height: 40px;
+  position: relative;
+  height: 40px;
 }
 
 .lb-eml::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 7px;
-    bottom: 0;
-    width: 20px;
-    background: url(./alternate_email_white_24dp.svg) center / contain no-repeat;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  bottom: 0;
+  width: 20px;
+  background: url(./alternate_email_white_24dp.svg) center / contain no-repeat;
 }
 
-
 .lb-psw {
-    position: relative;
-    height: 40px;
+  position: relative;
+  height: 40px;
 }
 
 .lb-psw::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 7px;
-    bottom: 0;
-    width: 20px;
-    background: url(./lock_white_24dp.svg) center / contain no-repeat;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  bottom: 0;
+  width: 20px;
+  background: url(./lock_white_24dp.svg) center / contain no-repeat;
 }
 
 button {
-    width: 100%;
-    height: 45px;
-    border-radius: 70px;
-    background-color: white;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.644);
-    font-weight: 700;
-    background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  border-radius: 70px;
+  background-color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.644);
+  font-weight: 700;
+  background-color: #ffffff;
 }
 
 .footer {
-    text-align: center;
-    padding-top: 130px;
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 12px;
+  text-align: center;
+  padding-top: 130px;
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 12px;
 }
 
 h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .error {
-    font-family: 'Roboto', sans-serif;
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 12px;
-    padding-left: 25px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 12px;
+  padding-left: 25px;
 }
 
 .desk-img {
-    display: none;
+  display: none;
 }
 
-
 @media (min-width: 1024px) {
-    main {
-        display: flex;
-    }
-    
-    .container {
-        padding:100px;
-    }
-    
-    .desk-img {
-        display: flex;
-        background-color: #F8F8F8;
-    }
+  main {
+    display: flex;
+  }
 
-    .dsk{  
-        height: 100vh;
-    }
+  .container {
+    padding: 100px;
+  }
+
+  .desk-img {
+    display: flex;
+    background-color: #f8f8f8;
+  }
+
+  .dsk {
+    height: 100vh;
+  }
 }
