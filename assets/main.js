@@ -8,13 +8,18 @@ form.addEventListener("submit", (e) => {
   let valorSenha = senha[0].value;
   let boo = false;
 
-  if (!valorEmail || !valorSenha) {
+  if (!valorEmail) {
     boo = false;
   } else boo = true;
   console.log(boo);
 
   if (boo === false) {
-    mostraErro();
+    erroEmail();
+    return;
+  }
+
+  if(valorSenha.length < 4){
+    erroSenha();
     return;
   }
 
@@ -26,12 +31,19 @@ form.addEventListener("submit", (e) => {
   return;
 });
 
-function mostraErro() {
+function erroEmail() {
   const email = document.querySelector(".email");
-
   email.style.borderColor = "#FF5757";
   const error = document.querySelector(".error");
   error.innerHTML = "Por favor, insira um email válido";
+  return;
+}
+
+function erroSenha() {
+  const senha = document.querySelector(".password");
+  senha.style.borderColor = "#FF5757";
+  const error = document.querySelector(".error");
+  error.innerHTML = "Senha deve conter mais de 4 dígitos";
   return;
 }
 
