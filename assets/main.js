@@ -11,7 +11,6 @@ form.addEventListener("submit", (e) => {
   if (!valorEmail) {
     boo = false;
   } else boo = true;
-  console.log(boo);
 
   if (boo === false) {
     erroEmail();
@@ -27,6 +26,8 @@ form.addEventListener("submit", (e) => {
   cssEmail.style.borderColor = "#ffffff";
   const error = document.querySelector(".error");
   error.innerHTML = "";
+  const cssSenha = document.querySelector(".password");
+  cssSenha.style.borderColor = "#ffffff";
   clearInput();
   return;
 });
